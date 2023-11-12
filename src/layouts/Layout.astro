@@ -1,0 +1,43 @@
+---
+import Footer from "../components/Footer.astro"
+import Navbar from "../components/Navbar.astro"
+
+interface Props {
+  title?: string
+}
+
+const { title = "Fran Brankovic" } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Fran Brankovic portfolio page" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body
+    class="mx-auto max-w-screen-xl px-5 font-sans text-white sm:text-[16px] md:text-[18px]"
+  >
+    <Navbar />
+    <slot />
+    <Footer />
+  </body>
+</html>
+<style is:global>
+  * {
+    color: white;
+  }
+  body {
+    background: rgb(2, 1, 19);
+    background: linear-gradient(
+      335deg,
+      rgba(2, 1, 19, 1) 0%,
+      rgba(65, 21, 83, 1) 53%,
+      rgba(64, 19, 140, 1) 93%
+    );
+  }
+</style>
