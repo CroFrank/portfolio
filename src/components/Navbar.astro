@@ -1,6 +1,4 @@
 ---
-import Button from "./reusable/Button.astro"
-
 const menuitems = [
   {
     title: "About",
@@ -34,8 +32,12 @@ const menuitems = [
     }
   </div>
   <div class="flex items-center">
-    <a href="/cv/Fran Brankovic - CV.pdf" download="Fran Brankovic - CV.pdf">
-      <Button size="md">Download CV</Button>
+    <a
+      href="/cv/Fran Brankovic - CV.pdf"
+      download="Fran Brankovic - CV.pdf "
+      class="bg-yellow-700 text-white hover:bg-yellow-600 hover:text-black rounded-xl text-center py-3 px-4"
+    >
+      Download CV
     </a>
   </div>
 </nav>

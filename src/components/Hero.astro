@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets"
 import profileImage from "../assets/Fran.jpg"
-import Button from "./reusable/Button.astro"
 ---
 
 <section
@@ -28,7 +27,12 @@ import Button from "./reusable/Button.astro"
       </h1>
     </div>
     <div class="mb-10">
-      <Button style="primary" size="lg" class="flex">Contact Me</Button>
+      <a
+        href="/contact"
+        class="bg-yellow-700 text-white hover:bg-yellow-600 hover:text-black rounded-xl text-center py-3 px-4"
+      >
+        Contact Me</a
+      >
     </div>
   </div>
 </section>
