@@ -1,9 +1,9 @@
 # My portfolio web page
 
-[![Link to portfolio page 👀]](https://portfolio-crofrank.vercel.app/)
+[Visit portfolio page 👀](https://portfolio-crofrank.vercel.app/)
 
-In this portfolio you'll read my short story of getting into web development.
-I showcase skills and projects I worked on.
+In this portfolio you'll read my short story of getting into web development.**
+I showcase skills and projects I worked on.**
 Inside you can find contact info to get to me.
 
 ## 🚀 In this project I used:
