@@ -15,10 +15,12 @@ Inside you can find contact info to get to me.
 
 ## 🧞 Commands
 
+If you want to get it locally on your machine:<br />
 All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
+| `git clone SSH link`      | Get code locally                                 |
 | `npm install`             | Installs dependencies                            |
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
 | `npm run build`           | Build your production site to `./dist/`          |
