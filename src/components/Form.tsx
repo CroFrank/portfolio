@@ -42,7 +42,7 @@ export default function Form({ secret }: { secret: string }) {
   return (
     <>
       <form method="POST" onSubmit={handleSubmit}>
-        <h1 className="text-black">{secret}</h1>
+        <h1 className="text-black">{secret ? secret : "jbg"}</h1>
         <div className="mb-4">
           <label
             htmlFor="name"
