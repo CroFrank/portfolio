@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from "react"
 import { Modal } from "./Modal"
 
-export default function Form() {
+export default function Form({ secret }: { secret: string }) {
   const [isSubmiting, setIsSubmitting] = useState(false)
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
@@ -22,13 +22,10 @@ export default function Form() {
     e.preventDefault()
     setIsSubmitting(true)
     try {
-      const res = await fetch(
-        `https://script.google.com/macros/s/AKfycbzwhGp9TscNrnVUAq65R7W68MVI2GEd9QKXwdT0qQ95Qke8hitxLn1Qkut1PWSWqYRG/exec`,
-        {
-          method: "POST",
-          body: formData,
-        }
-      )
+      const res = await fetch(`${secret}`, {
+        method: "POST",
+        body: formData,
+      })
       const resData = await res.text()
       setResponse(resData)
       setIsModalOpen(true)

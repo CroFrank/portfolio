@@ -2,6 +2,7 @@
 import NavbarContact from "../components/NavbarContact.astro"
 import Layout from "../layouts/Layout.astro"
 import Form from "../components/Form"
+const secret = import.meta.env.SECRET_PASSWORD
 ---
 
 <Layout>
@@ -11,7 +12,7 @@ import Form from "../components/Form"
       class="max-w-md mx-auto bg-white rounded-md p-8 shadow-lg shadow-yellow-400 mb-8 mt-4"
     >
       <h2 class="text-2xl font-semibold mb-6 text-yellow-800">Talk to me :)</h2>
-      <Form client:load />
+      <Form secret={secret} client:load />
     </div>
   </main>
 </Layout>

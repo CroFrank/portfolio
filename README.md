@@ -11,6 +11,7 @@ Inside you can find contact info to get to me and also download my CV.
 - Astro as generator and framework
 - JS - programming language
 - TS - superset of JS
+- React - Ui js library
 - Tailwind for styling
 
 ## 🧞 Commands
@@ -28,4 +29,5 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
+<br />
 I'd like to hear about your project ideas, collaboration proposals, job offers or anything you think I could help with.
