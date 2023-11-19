@@ -1,7 +1,7 @@
 ---
-title: Vivada
-img_alt: New social media platform
-link: https://vivada.vercel.app/
-tags: ["React", "Google API", "Typescript"]
-image: ./images/vivada.png
+title: Cars
+img_alt: App about car models and brands
+link: https://cars-crofrank.vercel.app/
+tags: ["React", "Firestore", "Typescript"]
+image: ./images/cars.png
 ---
