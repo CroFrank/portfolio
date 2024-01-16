@@ -1,7 +1,9 @@
 ---
-title: Movie App
-img_alt: Movies search and info
-link: https://movie-app-crofrank.vercel.app/
-tags: ["Nextjs13", "Tailwind", "TS", RestAPI]
-image: ./images/movie-app.png
+title: Bonani-shop
+img_alt: Front page of my website project
+link: https://www.bonani-caketoppers.com/
+description: Online shop where you can find cake decorations
+tags: [Frontend, Astro, Tailwind]
+image: ./images/bonani.png
+github: https://github.com/CroFrank/bonani-shop/
 ---

@@ -1,20 +1,21 @@
 ---
-import About from "../components/About.astro"
+import LearningPath from "../components/LearningPath.tsx"
 import Hero from "../components/Hero.astro"
 import Projects from "../components/Projects.astro"
 import Layout from "../layouts/Layout.astro"
 import BackToTop from "../components/ui/BackToTop.astro"
 import Contact from "../components/Contact.astro"
-import Skills from "../components/Skills.astro"
+import Skills from "../components/Skills.tsx"
 import Navbar from "../components/Navbar.astro"
+import Frontend from "../components/Frontend"
 ---
 
 <Layout>
   <main>
-    <Navbar />
     <Hero />
-    <Skills />
-    <About />
+    <Skills client:load />
+    <Frontend />
+    <LearningPath />
     <Projects />
     <Contact />
     <BackToTop />

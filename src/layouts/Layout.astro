@@ -20,8 +20,9 @@ const { title = "Fran Brankovic" } = Astro.props
     <title>{title}</title>
   </head>
   <body
-    class="min-h-screen mx-auto max-w-screen-xl px-5 font-sans text-white sm:text-[16px] md:text-[18px] flex flex-col"
+    class="min-h-screen mx-auto container px-3 text-white sm:text-[16px] md:text-[18px] flex flex-col"
   >
+    <Navbar />
     <slot />
     <Footer />
   </body>
@@ -31,12 +32,13 @@ const { title = "Fran Brankovic" } = Astro.props
     color: white;
   }
   body {
-    background: rgb(2, 1, 19);
+    /* background: rgb(2, 1, 19);
     background: linear-gradient(
       335deg,
       rgba(2, 1, 19, 1) 0%,
       rgba(65, 21, 83, 1) 53%,
       rgba(64, 19, 140, 1) 93%
-    );
+    ); */
+    background-color: rgb(93, 93, 93);
   }
 </style>

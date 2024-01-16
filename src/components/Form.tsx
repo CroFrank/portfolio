@@ -29,7 +29,6 @@ export default function Form({ secret }: { secret: string }) {
       const resData = await res.text()
       setResponse(resData)
       setIsModalOpen(true)
-      console.log(resData)
     } catch (error) {
       console.log(error)
     }
@@ -102,7 +101,7 @@ export default function Form({ secret }: { secret: string }) {
         <div className="mt-6 flex justify-between items-center">
           <button
             type="submit"
-            className="bg-yellow-600 text-white px-4 py-2 rounded-md hover:bg-yellow-500"
+            className="bg-yellow-700 px-4 py-2 rounded-md hover:scale-105 tracking-wider"
           >
             {isSubmiting ? "...Submitting" : "Submit"}
           </button>
