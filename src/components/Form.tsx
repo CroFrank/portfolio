@@ -52,7 +52,7 @@ export default function Form({ secret }: { secret: string }) {
             type="text"
             id="name"
             name="Name"
-            className="w-full border-2 border-gray-300 rounded-md p-2 text-slate-700"
+            className="w-full border-2 border-gray-300 rounded-md p-2 text-gray-700"
             placeholder="John Doe"
             required
             value={name}
@@ -66,17 +66,17 @@ export default function Form({ secret }: { secret: string }) {
             className="block text-gray-600 text-sm font-medium mb-2"
           >
             Your Email
-            <input
-              type="email"
-              id="email"
-              name="Email"
-              className="w-full border-2 border-gray-300 rounded-md p-2 text-slate-700"
-              placeholder="john.doe@example.com"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
           </label>
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            className="w-full border-2 border-gray-300 rounded-md p-2 text-gray-700"
+            placeholder="john.doe@example.com"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
         </div>
 
         <div className="mb-4">
@@ -85,17 +85,17 @@ export default function Form({ secret }: { secret: string }) {
             className="block text-gray-600 text-sm font-medium mb-2"
           >
             Message
-            <textarea
-              id="message"
-              name="Message"
-              rows={4}
-              className="w-full border-2 border-gray-300 rounded-md p-2 text-slate-700"
-              placeholder="Your message here..."
-              required
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            ></textarea>
           </label>
+          <textarea
+            id="message"
+            name="Message"
+            rows={4}
+            className="w-full border-2 border-gray-300 rounded-md p-2 text-gray-700"
+            placeholder="Your message here..."
+            required
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          ></textarea>
         </div>
 
         <div className="mt-6 flex justify-between items-center">
